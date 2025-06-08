@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIGH ORDER FUNCTION</title>
+</head>
+<body>
+    <h3>This is an example of High Order Function:- </h3>
+    <script>
+        function applyOperation(a, b, add) {
+            return add(a, b);
+        }
+        const add = (x, y) => x+y;
+        document.write("36 + 33 = " + applyOperation(36,33, add));
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALLBACK FUNCTION</title>
+</head>
+<body>
+    <h3>This is an example of Callback Function:-</h3>
+    <script>
+        function sayHello(greeting) {
+            document.writeln("Inside sayHello function");
+            greeting();
+        }
+
+        function greeting() {
+            document.writeln("Hello from the callback function");
+        }
+        sayHello(greeting);
+    </script>
+</body>
+</html>
